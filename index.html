@@ -6,40 +6,56 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <script defer src="assets/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Calculator App</title>
   </head>
   <body>
     <div class="container">
-      <header class="header"></header>
-      <div class="show"></div>
+      <header class="header">
+        <h1 class="h1">calc</h1>
+        <div class="theme">
+          <p class="p">THEME</p>
+          <button class="theme-btn first-theme"></button>
+          <button class="theme-btn second-theme"></button>
+        </div>
+      </header>
+      <div class="show"><h1 class="h1 screen-h1">23.45</h1></div>
       <main class="main">
         <table class="calc">
           <tr>
-            <td><input type="button" value="7" /></td>
-            <td><input type="button" value="8" /></td>
-            <td><input type="button" value="9" /></td>
-            <td><input type="button" value="DEL" /></td>
+            <td><input class="key-btn" type="button" value="7" /></td>
+            <td><input class="key-btn" type="button" value="8" /></td>
+            <td><input class="key-btn" type="button" value="9" /></td>
+            <td><input class="key-btn h-btn" type="button" value="DEL" /></td>
           </tr>
           <tr>
-            <td><input type="button" value="4" /></td>
-            <td><input type="button" value="5" /></td>
-            <td><input type="button" value="6" /></td>
-            <td><input type="button" value="+" /></td>
+            <td><input class="key-btn" type="button" value="4" /></td>
+            <td><input class="key-btn" type="button" value="5" /></td>
+            <td><input class="key-btn" type="button" value="6" /></td>
+            <td><input class="key-btn" type="button" value="+" /></td>
           </tr>
           <tr>
-            <td><input type="button" value="1" /></td>
-            <td><input type="button" value="2" /></td>
-            <td><input type="button" value="3" /></td>
-            <td><input type="button" value="-" /></td>
+            <td><input class="key-btn" type="button" value="1" /></td>
+            <td><input class="key-btn" type="button" value="2" /></td>
+            <td><input class="key-btn" type="button" value="3" /></td>
+            <td><input class="key-btn" type="button" value="-" /></td>
           </tr>
           <tr>
-            <td><input type="button" value="." /></td>
-            <td><input type="button" value="0" /></td>
-            <td><input type="button" value="/" /></td>
-            <td><input type="button" value="x" /></td>
+            <td><input class="key-btn" type="button" value="." /></td>
+            <td><input class="key-btn" type="button" value="0" /></td>
+            <td><input class="key-btn" type="button" value="/" /></td>
+            <td><input class="key-btn" type="button" value="x" /></td>
           </tr>
         </table>
-        <div class="origin btn"></div>
+        <div class="origin btn">
+          <button class="origin-btn reset h-btn">RESET</button>
+          <button class="origin-btn equal">=</button>
+        </div>
       </main>
     </div>
   </body>
