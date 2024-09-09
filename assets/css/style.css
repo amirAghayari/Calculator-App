@@ -105,6 +105,7 @@ body {
 .screen-h1 {
   font-size: 4rem;
   margin: 0 2rem 0 2rem;
+  color: var(--text-white);
 }
 
 /* main keys */
