@@ -22,8 +22,24 @@ body {
   --red-key-shadow: hsl(6, 70%, 34%);
   --key-bac: hsl(30, 25%, 89%);
   --key-bac-shadow: hsl(28, 16%, 65%);
+  --key-bac-two: hsl(225, 21%, 49%);
+  --key-bac-stwo: hsl(224, 28%, 35%);
   --text-white: hsl(0, 0%, 100%);
   --text-gray: hsl(221, 14%, 31%);
+}
+
+.light-theme {
+  --main-bac: hsl(0, 0%, 90%);
+  --keypad-bac: hsl(0, 5%, 81%);
+  --screen-bac: hsl(0, 0%, 93%);
+  --red-key: hsl(6, 63%, 50%);
+  --red-key-shadow: hsl(6, 70%, 34%);
+  --key-bac: hsl(45, 7%, 89%);
+  --key-bac-shadow: hsl(35, 11%, 61%);
+  --key-bac-two: hsl(185, 42%, 37%);
+  --key-bac-stwo: hsl(224, 28%, 35%);
+  --text-white: hsl(0, 0%, 100%);
+  --text-gray: hsl(60, 10%, 19%);
 }
 
 body {
@@ -141,12 +157,12 @@ body {
 }
 
 .h-btn {
-  background-color: rgb(86, 194, 227);
+  background-color: var(--key-bac-two);
   color: var(--text-white);
   font-size: 2.4rem;
 }
 .h-btn:hover {
-  background-color: rgb(37, 189, 236);
+  background-color: var(--key-bac-stwo);
 }
 
 .origin {
